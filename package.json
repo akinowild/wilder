@@ -1,0 +1,19 @@
+{
+  "name": "akino",
+  "version": "1.0.0",
+  "description": "秋风拽叶落，野径滞水流。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinowild/akino-tools.git"
+  },
+  "author": "akino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinowild/akino-tools/issues"
+  },
+  "homepage": "https://github.com/akinowild/akino-tools#readme"
+}
