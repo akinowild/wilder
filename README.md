@@ -52,3 +52,30 @@ const weather = await weather('110000','5566078add3802ac7d7251c5342d7e28')
   "humidity_float": "86.0"
 }
 ```
+
+## 解析url参数
+akino.getURLParameters(url)
+
+## 数组中找到最大值，和最小值，并返回序号
+```angular2html
+akino.findValueAndIndex(arr, option)
+```
+arr指定的数组
+
+option:min,max
+
+返回值：
+
+值：akino.findValueAndIndex(arr, option).value
+
+序号：akino.findValueAndIndex(arr, option).index
+
+
+## 计算数组平均值
+```angular2html
+akino.calculateAverage(arr)
+```
+arr指定的数组
+
+
+
