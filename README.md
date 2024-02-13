@@ -5,6 +5,10 @@
 ```
 pnpm add akino
 ```
+如果报TS的错误，则在src下面新建一个index.d.ts文件，在里面输入
+```
+declare module 'akino';
+```
 引用文件
 
 ```
@@ -54,13 +58,13 @@ const weather = await weather('110000','5566078add3802ac7d7251c5342d7e28')
 ```
 
 ## 解析url参数
-akino.getURLParameters(url)
+akino.getURLParameters(url)返回{}
 
 ## 数组中找到最大值，和最小值，并返回序号
 ```angular2html
 akino.findValueAndIndex(arr, option)
-```
-arr指定的数组
+```参数是min和max dcddcd 参輑是
+arr是指定的数组
 
 option:min,max
 
@@ -78,4 +82,9 @@ akino.calculateAverage(arr)
 arr指定的数组
 
 
+## 上传图片为，转化fileList用的格式[{name:'',url:''}]
+transformFileList(arr)
+
+## 文件下载
+downloadFileFromStream(apiUrl)
 

@@ -1,7 +1,6 @@
-import { findValueAndIndex, calculateAverage } from './arrow/index'
-import { convertUrlsToString, weather} from './weather/index'
-import { getURLParameters } from './url/index'
+import { findValueAndIndex, calculateAverage } from './lib/arrow/index'
+import { convertUrlsToString, weather} from './lib/weather/index'
+import { getURLParameters } from './lib/url/index'
 
-export { findValueAndIndex, calculateAverage }
-export { convertUrlsToString, weather }
-export { getURLParameters }
+const akino ={ findValueAndIndex, calculateAverage,convertUrlsToString, weather,getURLParameters }
+export default akino
