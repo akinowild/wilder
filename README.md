@@ -1,29 +1,37 @@
-# akino
-> 秋风拽叶落，野径滞水流。
+# wilder
+自已常用的一些函数方法的集合
+《除夜》
+> 扫除茅舍涤尘嚣，一炷清香拜九霄。
+> 万物迎春送残腊，一年结局在今宵。
+> 生盆火烈轰鸣竹，守岁筵开听颂椒。
+> 野客预知农事好，三冬瑞雪未全消。
 
-安装
+野客：村野之人，多借指隐逸者。
+所以偏了个词 wild+er=wilder
+
+# 安装
 ```
-pnpm add akino
+pnpm add wilder
 ```
 如果报TS的错误，则在src下面新建一个index.d.ts文件，在里面输入
 ```
-declare module 'akino';
+declare module 'wilder';
 ```
-引用文件
+# 引用文件
 
 ```
-import akino from 'akino';
+import wilder from 'wilder';
 ```
 
 
-## 数组转换字符串  akino.convertUrlsToString()
+## 数组转换字符串  wilder.convertUrlsToString()
 ```
 const urls = [
     { url: 'http://example.com/images/xcloud3-pump/image1.jpg' },
     { url: 'http://example.com/images/xcloud3-pump/image2.jpg' },
 ];
 const prefix = 'xcloud3-pump';
-const result = akino.convertUrlsToString(urls, prefix);
+const result = wilder.convertUrlsToString(urls, prefix);
 
 // 第一个参数，需要转换的图片数组，第二个参数，需要转换的分割符号
 输出结果：
@@ -32,7 +40,7 @@ result = xcloud3-pump/image1.jpg,xcloud3-pump/image2.jpg
 
 
 ## 获取天气
-akino.weather()
+wilder.weather()
 
 城市编码查询地址：
 http://xzqh.mca.gov.cn/map
@@ -58,26 +66,27 @@ const weather = await weather('110000','5566078add3802ac7d7251c5342d7e28')
 ```
 
 ## 解析url参数
-akino.getURLParameters(url)返回{}
+wilder.getURLParameters(url)返回{}
 
 ## 数组中找到最大值，和最小值，并返回序号
-```angular2html
-akino.findValueAndIndex(arr, option)
-```参数是min和max dcddcd 参輑是
+```
+wilder.findValueAndIndex(arr, option)
+```
+参数是min和max
 arr是指定的数组
 
 option:min,max
 
 返回值：
 
-值：akino.findValueAndIndex(arr, option).value
+值：wilder.findValueAndIndex(arr, option).value
 
-序号：akino.findValueAndIndex(arr, option).index
+序号：wilder.findValueAndIndex(arr, option).index
 
 
 ## 计算数组平均值
-```angular2html
-akino.calculateAverage(arr)
+```
+wilder.calculateAverage(arr)
 ```
 arr指定的数组
 
