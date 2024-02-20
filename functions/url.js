@@ -1,5 +1,15 @@
+
+export function getUrl(url){
+    return new URL(url)
+}
+
+// 是否合理
+export function  isValidUrl(validUrl){
+    return /^(https?|ftp):\/\/[^\s/$.?#].\S*$/.test(validUrl);
+}
+
 // 解析URL
-function getURLParameters(url = window.location.search) {
+export function etURLParameters(url = window.location.search) {
     // 如果不指定url，则解析返回当前地址的
     let searchParams;
     if (url) {
@@ -13,5 +23,3 @@ function getURLParameters(url = window.location.search) {
     })
     return params;
 }
-
-export { getURLParameters }

@@ -1,6 +1,6 @@
 {
   "name": "wilder",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "description": "秋风拽叶落，野径滞水流。",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akinowild/akino-tools.git"
+    "url": "git+https://github.com/akinowild/wilder"
   },
   "author": "akino",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akinowild/akino-tools/issues"
+    "url": "https://github.com/akinowild/wilder/issues"
   },
-  "homepage": "https://github.com/akinowild/akino-tools#readme"
+  "homepage": "https://github.com/akinowild/wilder#readme"
 }

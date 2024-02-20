@@ -1,6 +1,15 @@
-import { findValueAndIndex, calculateAverage } from './lib/arrow/index'
-import { convertUrlsToString, weather} from './lib/weather/index'
-import { getURLParameters } from './lib/url/index'
+import * as array  from './functions/array'
+import * as common from './functions/common'
+import * as object from './functions/object'
+import * as time from './functions/time'
+import * as url from './functions/url'
+import * as file from './functions/file'
 
-const wilder ={ findValueAndIndex, calculateAverage,convertUrlsToString, weather,getURLParameters }
-export default wilder
+export default {
+    ...array,
+    ...common,
+    ...object,
+    ...time,
+    ...url,
+    ...file
+}

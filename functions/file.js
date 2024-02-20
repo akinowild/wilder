@@ -1,11 +1,3 @@
-// 上传图片为，转化fileList用的格式[{name:'',url:''}]
-export function transformFileList(arr) {
-    return arr.map((item) => ({
-        name: item?.name,
-        url: item?.response?.data
-    }))
-}
-
 // 文件下载
 export async function downloadFileFromStream(apiUrl) {
     const { data } = await apiUrl()
@@ -28,4 +20,3 @@ export async function downloadFileFromStream(apiUrl) {
     window.URL.revokeObjectURL(url)
     document.body.removeChild(a)
 }
-
