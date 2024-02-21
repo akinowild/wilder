@@ -4,6 +4,7 @@ import * as object from './functions/object'
 import * as time from './functions/time'
 import * as url from './functions/url'
 import * as file from './functions/file'
+import * as classType from './class/enumerate'
 
 export default {
     ...array,
@@ -11,5 +12,6 @@ export default {
     ...object,
     ...time,
     ...url,
-    ...file
+    ...file,
+    ...classType
 }

@@ -1,10 +1,10 @@
 
-export function getUrl(url){
+export function getUrl(url:string){
     return new URL(url)
 }
 
 // 是否合理
-export function  isValidUrl(validUrl){
+export function  isValidUrl(validUrl:string){
     return /^(https?|ftp):\/\/[^\s/$.?#].\S*$/.test(validUrl);
 }
 
@@ -17,7 +17,7 @@ export function etURLParameters(url = window.location.search) {
     } else {
         searchParams = new URLSearchParams(window.location.search)
     }
-    const params = {}
+    const params:any = {}
     searchParams.forEach(function (value, key) {
         params[key] = value
     })
